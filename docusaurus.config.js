@@ -10,9 +10,8 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'JerycoopV', // Tu usuario de GitHub
-  projectName: 'docusaurus',     // Nombre del repositorio
-  deploymentBranch: 'gh-pages',
+  organizationName: 'JerycoopV', // GitHub username
+  projectName: 'docusaurus',     // GitHub repo name
   trailingSlash: false,
 
   presets: [
