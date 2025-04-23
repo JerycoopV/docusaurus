@@ -2,21 +2,25 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
-(module.exports = {
+module.exports = {
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: 'https://jerycoopv.github.io',         // ✅ tu URL de GitHub Pages
+  baseUrl: '/docusaurus/',                    // ✅ nombre del repositorio en minúsculas con slash
+
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook',
-  projectName: 'docusaurus',
+
+  organizationName: 'JerycoopV',              // ✅ tu usuario de GitHub
+  projectName: 'docusaurus',                  // ✅ el nombre del repositorio (en minúscula)
+  deploymentBranch: 'gh-pages',               // ✅ rama para GitHub Pages
+  trailingSlash: false,
 
   presets: [
     [
       '@docusaurus/preset-classic',
-      ({
+      {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
@@ -24,7 +28,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      }),
+      },
     ],
   ],
 
@@ -104,4 +108,4 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       darkTheme: darkCodeTheme,
     },
   },
-});
+};
