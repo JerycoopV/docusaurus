@@ -1,20 +1,18 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
-/** @type {import('@docusaurus/types').DocusaurusConfig} */
+/** @type {import('@docusaurus/types').Config} */
 module.exports = {
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
-  url: 'https://jerycoopv.github.io',         // ✅ tu URL de GitHub Pages
-  baseUrl: '/docusaurus/',                    // ✅ nombre del repositorio en minúsculas con slash
-
+  url: 'https://jerycoopv.github.io',
+  baseUrl: '/docusaurus/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-
-  organizationName: 'JerycoopV',              // ✅ tu usuario de GitHub
-  projectName: 'docusaurus',                  // ✅ el nombre del repositorio (en minúscula)
-  deploymentBranch: 'gh-pages',               // ✅ rama para GitHub Pages
+  organizationName: 'JerycoopV', // Tu usuario de GitHub
+  projectName: 'docusaurus',     // Nombre del repositorio
+  deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
   presets: [
@@ -23,7 +21,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
+          editUrl: 'https://github.com/JerycoopV/docusaurus/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -52,7 +50,7 @@ module.exports = {
           position: 'left',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/JerycoopV/docusaurus',
           label: 'GitHub',
           position: 'right',
         },
