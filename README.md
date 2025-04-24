@@ -1,33 +1,70 @@
-# Website
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+# Manual de Inspeccionar
 
-### Installation
+Accede al manual completo aquí:  
+👉 [https://902029862.facturalo.co/docusaurus/](https://902029862.facturalo.co/docusaurus/)
 
-```
-$ yarn
-```
+## 📘 Descripción
 
-### Local Development
+Este proyecto contiene un manual interactivo creado con [Docusaurus](https://docusaurus.io/) que explica cómo utilizar la herramienta "Inspeccionar" del navegador. Está pensado para usuarios que quieran aprender a analizar, depurar y entender el contenido de una página web desde el navegador.
 
-```
-$ yarn start
-```
+La documentación está organizada por secciones visuales y técnicas, incluyendo ejemplos con imágenes para una mejor comprensión.
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+---
 
-### Build
+## 🚀 Cómo clonar este repositorio
 
-```
-$ yarn build
-```
+Para clonar este proyecto en tu máquina local, abre una terminal y ejecuta:
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-```
-$ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
+```bash
+git clone https://github.com/TU-USUARIO/TU-REPO.git
+cd TU-REPO
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Reemplaza `TU-USUARIO` y `TU-REPO` con tu nombre de usuario y el nombre real del repositorio.
+
+---
+
+## 🔧 Cómo levantar el proyecto en local
+
+1. Instala Node.js si no lo tienes: [https://nodejs.org](https://nodejs.org)
+2. Instala las dependencias del proyecto:
+
+```bash
+npm install
+```
+
+3. Corre el servidor de desarrollo:
+
+```bash
+npm run start
+```
+
+La documentación estará disponible en [http://localhost:3000](http://localhost:3000)
+
+---
+
+## ☁️ Cómo subir el proyecto (opcional)
+
+Si quieres desplegar tu documentación en un servidor o dominio como lo hice en  
+[https://902029862.facturalo.co/docusaurus/](https://902029862.facturalo.co/docusaurus/), puedes seguir estos pasos:
+
+1. Construye el proyecto:
+
+```bash
+npm run build
+```
+
+2. Sube la carpeta `build/` generada a tu servidor mediante FTP, cPanel o GitHub Pages, según tu configuración.
+
+Si usas GitHub Pages, puedes configurar `docusaurus.config.js` y ejecutar:
+
+```bash
+GIT_USER=tu_usuario GIT_REPO=tu_repo npm run deploy
+```
+
+---
+
+## 📩 Contacto
+
+Si tienes dudas o sugerencias, no dudes en crear un issue o contactarme.
